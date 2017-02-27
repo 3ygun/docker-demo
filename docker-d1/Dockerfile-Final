@@ -1,0 +1,4 @@
+# While within this directory...
+# Build with: docker build -t docker-d1 .
+# Run with: docker run -it docker-d1 /bin/bash
+FROM ubuntu:latest
