@@ -9,3 +9,5 @@ Newpath's - 2/26/2017 Meeting - Docker with David
     2. Using [Docker Hub](https://hub.docker.com/) to make it better?
         - `+` community insight
         - `-` ambiguiety & misdirection
+
+3. The Watson TA demo available in [watson-ta](watson-ta/)
