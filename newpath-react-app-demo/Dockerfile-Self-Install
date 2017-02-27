@@ -1,0 +1,22 @@
+FROM ubuntu:latest
+RUN apt-get update
+
+# Install Curl?
+RUN apt-get install -y curl
+
+# Installs Nodejs & NPM
+RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
+RUN apt-get install -y nodejs
+
+# Install the npm packages
+ADD package.json /
+RUN npm install
+
+# Ports
+EXPOSE 3000
+
+# Change Directories
+WORKDIR /app/
+
+# On regular docker run execute the npm start command
+CMD [ "npm", "start"]
